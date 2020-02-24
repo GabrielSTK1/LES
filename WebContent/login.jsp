@@ -97,7 +97,7 @@
 						</div>
 						
 						<button type="submit" class="btn btn-black">Login</button>
-						<button href="#" class="btn btn-secundary">Registre-se</button>
+						<button href="cliente.jsp" class="btn btn-secundary">Registre-se</button>
 						
 					</form>
 				</div>

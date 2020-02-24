@@ -88,7 +88,14 @@
 						<div class="card">
 							<div class="card-body">
 							
-								<form name="my-form" action="" method="post">									
+								<form name="my-form" action="" method="post">
+								
+										<div class="form-group row d-none" >
+											<label for="txtIdCliente" class="col-md-4 col-form-label text-md-right">Id Cliente</label>
+											<div class="com-md-6">
+												<input type="text" id="txtIdCliente" name="txtIdCliente" class="form-control">
+											</div>
+										</div>										
 									
 										<div class="form-group row d-none" >
 											<label for="txtID" class="col-md-4 col-form-label text-md-right">ID</label>
@@ -131,6 +138,13 @@
 										<label for="txtBandeira" class="col-md-4 col-form-label text-md-right">Bandeira</label>
 										<div class="com-md-6">
 											<input type="text" id="txtBandeira" name="txtBandeira" class="form-control" disabled>
+										</div>
+									</div>
+									
+									<div class="form-group row">
+										<label for="txtData" class="col-md-4 col-form-label text-md-right">Data de Validade</label>
+										<div class="com-md-6">
+											<input type="text" id="txtData" name="txtData" class="form-control" maxlength="3" minlength="3">
 										</div>
 									</div>
 

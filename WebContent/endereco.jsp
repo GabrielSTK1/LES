@@ -77,6 +77,12 @@
 							
 								<form name="my-form" action="" method="post">
 										<div class="form-group row d-none" >
+											<label for="txtIdCliente" class="col-md-4 col-form-label text-md-right">ID Cliente</label>
+											<div class="com-md-6">
+												<input type="text" id="txtIdCliente" name="txtIdCliente" class="form-control">
+											</div>
+										</div>
+										<div class="form-group row d-none" >
 											<label for="txtID" class="col-md-4 col-form-label text-md-right">ID</label>
 											<div class="com-md-6">
 												<input type="text" id="txtID" name="txtID" class="form-control">
