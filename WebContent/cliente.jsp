@@ -105,7 +105,7 @@
 										</div>
 										
 										<div class="form-group row d-none" >
-											<label for="txtHabilitado" class="col-md-4 col-form-label text-md-right">ID</label>
+											<label for="txtHabilitado" class="col-md-4 col-form-label text-md-right">Habilitado</label>
 											<div class="com-md-6">
 												<input type="text" id="txtHabilitado" name="txtHabilitado" class="form-control">
 											</div>
