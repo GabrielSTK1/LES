@@ -6,7 +6,7 @@ import br.com.roupex.dominio.Resultado;
 public class ExcluirCommand extends AbstractCommand {
 
 	@Override
-	public Resultado executar(EntidadeDominio entidade) {
+	public Resultado executar(EntidadeDominio entidade, String operacao) {
 		return fachada.excluir(entidade);
 	}
 
