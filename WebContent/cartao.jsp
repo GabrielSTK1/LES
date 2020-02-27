@@ -28,7 +28,7 @@
 		
 	</script>
 	<style>
-			@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+			@import url(https://fonts.googleapis.col/css?family=Raleway:300,400,600);
 			body{
 			    margin: 0;
 			    font-size: .9rem;
@@ -84,7 +84,7 @@
 		<main class="my-form">
 			<div class="container">
 				<div class="row justify-content-center">
-					<div class="com-md-8">
+					<div class="col-md-8">
 						<div class="card">
 							<div class="card-body">
 							
@@ -92,35 +92,35 @@
 								
 										<div class="form-group row d-none" >
 											<label for="txtIdCliente" class="col-md-4 col-form-label text-md-right">Id Cliente</label>
-											<div class="com-md-6">
+											<div class="col-md-6">
 												<input type="text" id="txtIdCliente" name="txtIdCliente" class="form-control">
 											</div>
 										</div>										
 									
 										<div class="form-group row d-none" >
 											<label for="txtID" class="col-md-4 col-form-label text-md-right">ID</label>
-											<div class="com-md-6">
+											<div class="col-md-6">
 												<input type="text" id="txtID" name="txtID" class="form-control">
 											</div>
 										</div>
 										
 										<div class="form-group row d-none" >
 											<label for="txtHabilitado" class="col-md-4 col-form-label text-md-right">ID</label>
-											<div class="com-md-6">
+											<div class="col-md-6">
 												<input type="text" id="txtHabilitado" name="txtHabilitado" class="form-control">
 											</div>
 										</div>
 									
 									<div class="form-group row">
 										<label for="txtNumero" class="col-md-4 col-form-label text-md-right">Número do Cartão</label>
-										<div class="com-md-6">
+										<div class="col-md-6">
 											<input type="text" id="txtNumero" name="txtNumero" class="form-control" maxlength="16" minlength="16">
 										</div>
 									</div>
 									
 									<div class="form-group row">
 										<label for="txtNome" class="col-md-4 col-form-label text-md-right">Nome impresso</label>
-										<div class="com-md-6">
+										<div class="col-md-6">
 											<input type="text" id="txtNome" name="txtNome" class="form-control">
 											<small>Nome impresso na frente do cartão</small>
 										</div>
@@ -128,7 +128,7 @@
 									
 									<div class="form-group row">
 										<label for="txtCodigo" class="col-md-4 col-form-label text-md-right">Código de Segurança</label>
-										<div class="com-md-6">
+										<div class="col-md-6">
 											<input type="text" id="txtCodigo" name="txtCodigo" class="form-control" maxlength="3" minlength="3">
 											<small>Os três números impressos no verso do cartão</small>
 										</div>
@@ -136,14 +136,14 @@
 									
 									<div class="form-group row">
 										<label for="txtBandeira" class="col-md-4 col-form-label text-md-right">Bandeira</label>
-										<div class="com-md-6">
+										<div class="col-md-6">
 											<input type="text" id="txtBandeira" name="txtBandeira" class="form-control" disabled>
 										</div>
 									</div>
 									
 									<div class="form-group row">
 										<label for="txtData" class="col-md-4 col-form-label text-md-right">Data de Validade</label>
-										<div class="com-md-6">
+										<div class="col-md-6">
 											<input type="text" id="txtData" name="txtData" class="form-control" maxlength="3" minlength="3">
 										</div>
 									</div>
