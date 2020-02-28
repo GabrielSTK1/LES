@@ -49,6 +49,7 @@ public class ClienteVH implements IViewHelper{
 		String genero = request.getParameter("txtSexo");
 		String dataNascimento = request.getParameter("txtData");
 		String cpf = request.getParameter("txtCpf");
+		String ranking = request.getParameter("txtRanking");
 		String telefone = request.getParameter("txtTelefone");
 		
 		//Setando atributos no objeto
@@ -82,6 +83,10 @@ public class ClienteVH implements IViewHelper{
 		
 		if(cpf != null && !cpf.trim().equalsIgnoreCase("") && !cpf.isEmpty()) {
 			cliente.setCpf(cpf);
+		}
+		
+		if(ranking != null && !ranking.trim().equalsIgnoreCase("") && !ranking.isEmpty()) {
+			cliente.setRaking(Integer.parseInt(ranking));
 		}
 		
 		if(telefone != null && !telefone.trim().equalsIgnoreCase("") && !telefone.isEmpty()) {

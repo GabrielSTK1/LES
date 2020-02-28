@@ -68,6 +68,11 @@ public class ClienteDAO implements IDAO{
 			pst.setDate(2, data);
 			pst.setString(3, cliente.getCpf());
 			pst.setString(4, cliente.getTelefone());
+			
+			if(cliente.getRaking() == 0) {
+				cliente.setRaking(100);
+			}
+			
 			pst.setInt(5, cliente.getRaking());
 			pst.setInt(6, usuID);
 			
