@@ -7,7 +7,7 @@ public class ExcluirCommand extends AbstractCommand {
 
 	@Override
 	public Resultado executar(EntidadeDominio entidade, String operacao) {
-		return fachada.excluir(entidade);
+		return fachada.excluir(entidade, operacao);
 	}
 
 	

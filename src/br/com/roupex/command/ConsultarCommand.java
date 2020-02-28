@@ -7,7 +7,7 @@ public class ConsultarCommand extends AbstractCommand{
 
 	@Override
 	public Resultado executar(EntidadeDominio entidade, String operacao) {
-		return fachada.consultar(entidade);
+		return fachada.consultar(entidade, operacao);
 	}
 
 }

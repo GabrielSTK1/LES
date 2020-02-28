@@ -10,7 +10,7 @@ public class SalvarCommand extends AbstractCommand {
 		
 		System.out.println("ID COMMAND " + entidade.getId());
 		
-		return fachada.salvar(entidade);
+		return fachada.salvar(entidade, operacao);
 		
 	}
 	
