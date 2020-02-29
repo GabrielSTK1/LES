@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -7,6 +8,7 @@
 	<title>Produtos Cadastrados</title>
 	<link rel="stylesheet" href="_PLUGINS/bootstrap.min.css">
 	<script src="_PLUGINS/jquery-3.4.1.slim.min.js"></script>
+	<c:import url="import.jsp"/>
 	<script>
 	$(document).ready(function(){
 		$("#mytable #checkall").click(function () {
@@ -28,19 +30,20 @@
 	</script>
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-light navbar-laravel">
-			<div class="container">
-				<a class="navbar-brand" href="#">ROUPEX</a>
-			</div>
-		</nav>
+		<c:import url="navbarAdm.jsp"/>
 		
-		<div class="container">
+		<div class="container mt-5">
 	<div class="row">
 		
         
         <div class="col-md-12">
         <h4>Produtos Cadastrados</h4>
         <div class="table-responsive">
+        <div class="row text-right" >
+				<a href="/ROUPEX/produto.jsp" class="botao-cadastrar col-12 text-truncate " value="">
+				  	NOVO PRODUTO
+				</a>
+			</div>
 
                 
               <table id="mytable" class="table table-bordred table-striped">
@@ -63,63 +66,30 @@
 				    
 				    <tr>
 				    
-				    <td>Mohsin</td>
-				    <td>Irshad</td>
-				    <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
+				    <td>Camisa Preta</td>
+				    <td>#12BC</td>
+				    <td>GUCCI</td>
 				    <td>10</td>
 				    <td>10</td>
-				    <td>10</td>
-				    <td>10</td>
-				    <td>10</td>
-				    <td>+923335586757</td>
+				    <td>10%</td>
+				    <td>20</td>
+				    <td>NÃO</td>
+				    <td>01/01/2020</td>
 				    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
 				    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
 				    </tr>
 				    
 				 <tr>
 				    
-				    <td>Mohsin</td>
-				    <td>Irshad</td>
-				    <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
+				    <td>Camisa Preta</td>
+				    <td>#12BC</td>
+				    <td>GUCCI</td>
 				    <td>10</td>
 				    <td>10</td>
-				    <td>10</td>
-				    <td>10</td>
-				    <td>10</td>				    
-				    <td>+923335586757</td>
-				    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-				    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
-				    </tr>
-				    
-				    
-				 <tr>
-				    
-				    <td>Mohsin</td>
-				    <td>Irshad</td>
-				    <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
-				    <td>10</td>
-				    <td>10</td>
-				    <td>10</td>
-				    <td>10</td>
-				    <td>10</td>
-				    <td>+923335586757</td>
-				    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-				    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
-				    </tr>
-				    
-				    
-				    
-				 <tr>
-				    
-				    <td>Mohsin</td>
-				    <td>Irshad</td>
-				    <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
-				    <td>10</td>
-				    <td>10</td>
-				    <td>10</td>
-				    <td>10</td>
-				    <td>10</td>
-				    <td>+923335586757</td>
+				    <td>10%</td>
+				    <td>20</td>
+				    <td>NÃO</td>
+				    <td>01/01/2020</td>
 				    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
 				    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
 				    </tr>
@@ -127,15 +97,48 @@
 				    
 				 <tr>
 				    
-				    <td>Mohsin</td>
-				    <td>Irshad</td>
-				    <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
+				    <td>Camisa Preta</td>
+				    <td>#12BC</td>
+				    <td>GUCCI</td>
 				    <td>10</td>
 				    <td>10</td>
+				    <td>10%</td>
+				    <td>20</td>
+				    <td>NÃO</td>
+				    <td>01/01/2020</td>
+				    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+				    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
+				    </tr>
+				    
+				    
+				    
+				 <tr>
+				    
+				    <td>Camisa Preta</td>
+				    <td>#12BC</td>
+				    <td>GUCCI</td>
 				    <td>10</td>
 				    <td>10</td>
+				    <td>10%</td>
+				    <td>20</td>
+				    <td>NÃO</td>
+				    <td>01/01/2020</td>
+				    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+				    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
+				    </tr>
+				    
+				    
+				 <tr>
+				    
+				    <td>Camisa Preta</td>
+				    <td>#12BC</td>
+				    <td>GUCCI</td>
 				    <td>10</td>
-				    <td>+923335586757</td>
+				    <td>10</td>
+				    <td>10%</td>
+				    <td>20</td>
+				    <td>NÃO</td>
+				    <td>01/01/2020</td>
 				    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
 				    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
 				    </tr>
@@ -148,7 +151,7 @@
 				        
 				</table>
 				
-				<div class="clearfix"></div>				
+				<!-- <div class="clearfix"></div>				
 				                
 				            </div>
 				            
@@ -166,14 +169,14 @@
 				      </div>
 				          <div class="modal-body">
 				          <div class="form-group">
-				        <input class="form-control " type="text" placeholder="Mohsin">
+				        <input class="form-control " type="text" placeholder="Camisa Preta">
 				        </div>
 				        <div class="form-group">
 				        
 				        <input class="form-control " type="text" placeholder="Irshad">
 				        </div>
 				        <div class="form-group">
-				        <textarea rows="2" class="form-control" placeholder="CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan"></textarea>
+				        <textarea rows="2" class="form-control" placeholder="GUCCI"></textarea>
 				    
 				        
 				        </div>
@@ -182,9 +185,9 @@
 				        <button type="button" class="btn btn-warning btn-lg" style="width: 100%;"><span class="glyphicon glyphicon-ok-sign"></span> Update</button>
 				      </div>
 				        </div>
-				    <!-- /.modal-content --> 
+				    /.modal-content 
 				  </div>
-				      <!-- /.modal-dialog --> 
+				      /.modal-dialog 
 				    </div>
 				    
 				    
@@ -206,10 +209,10 @@
 				        <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> No</button>
 				      </div>
 				        </div>
-				    <!-- /.modal-content --> 
+				    /.modal-content 
 				  </div>
-				      <!-- /.modal-dialog --> 
-				    </div>
+				      /.modal-dialog 
+				    </div> -->
 		
 	</body>
 </html>

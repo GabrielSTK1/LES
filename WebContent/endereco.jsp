@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -12,6 +13,7 @@
 		<link rel="stylesheet" href="_PLUGINS/bootstrap.min.css">
 		<link rel="stylesheet" href=_CSS/form.css">
 		<script src="_PLUGINS/jquery-3.4.1.slim.min.js"></script>
+		<c:import url="import.jsp"/>
 		<title>Endereço</title>
 		<style>
 			@import url(https://fonts.googleapis.col/css?family=Raleway:300,400,600);
@@ -62,11 +64,7 @@
 	</head>
 	
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-light navbar-laravel">
-			<div class="container">
-				<a class="navbar-brand" href="#">ROUPEX</a>
-			</div>
-		</nav>
+		<c:import url="navbar.jsp"/>
 		
 		<main class="my-form">
 			<div class="container">

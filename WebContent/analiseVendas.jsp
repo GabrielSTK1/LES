@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -7,6 +8,7 @@
 	<title>Análise de Vendas</title>
 	<link rel="stylesheet" href="_PLUGINS/bootstrap.min.css">
 	<script src="_PLUGINS/jquery-3.4.1.slim.min.js"></script>
+	<c:import url="import.jsp"/>
 	<script>
 	$(document).ready(function(){
 		$("#mytable #checkall").click(function () {
@@ -28,14 +30,11 @@
 	</script>
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-light navbar-laravel">
-			<div class="container">
-				<a class="navbar-brand" href="#">ROUPEX</a>
-			</div>
-		</nav>
+		
+		<c:import url="navbarAdm.jsp"/>
 		
 		<div class="container">
-	<div class="row">
+	<div class="row mt-5">
 		
         
         <div class="col-md-12">
@@ -58,9 +57,9 @@
 				    
 				    <tr>				  
 				    <td>10</td>
-				    <td>10</td>
-				    <td>10</td>
-				    <td>10</td>				    
+				    <td>Gabriel</td>
+				    <td>#123ABC</td>
+				    <td>EM ANÁLISE</td>				    
 				    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
 				    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
 				    </tr>
@@ -68,32 +67,9 @@
 				 <tr>
 				    
 				    <td>10</td>
-				    <td>10</td>
-				    <td>10</td>
-				    <td>10</td>				    
-				    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-				    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
-				    </tr>
-				    
-				    
-				 <tr>
-				    
-				    <td>10</td>
-				    <td>10</td>
-				    <td>10</td>
-				    <td>10</td>				    
-				    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
-				    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
-				    </tr>
-				    
-				    
-				    
-				 <tr>
-				    
-				    <td>10</td>
-				    <td>10</td>
-				    <td>10</td>
-				    <td>10</td>				    
+				   <td>Gabriel</td>
+				    <td>#123ABC</td>
+				    <td>EM ANÁLISE</td>			    
 				    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
 				    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
 				    </tr>
@@ -102,9 +78,32 @@
 				 <tr>
 				    
 				    <td>10</td>
+				    <td>Gabriel</td>
+				    <td>#123ABC</td>
+				    <td>EM ANÁLISE</td>				    
+				    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+				    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
+				    </tr>
+				    
+				    
+				    
+				 <tr>
+				    
 				    <td>10</td>
+					<td>Gabriel</td>
+				    <td>#123ABC</td>
+				    <td>EM ANÁLISE</td>				    
+				    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+				    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
+				    </tr>
+				    
+				    
+				 <tr>
+				    
 				    <td>10</td>
-				    <td>10</td>				    
+				    <td>Gabriel</td>
+				    <td>#123ABC</td>
+				    <td>EM ANÁLISE</td>				    
 				    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
 				    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
 				    </tr>

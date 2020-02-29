@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -7,6 +8,7 @@
 	<title>Seus Endereços</title>
 	<link rel="stylesheet" href="_PLUGINS/bootstrap.min.css">
 	<script src="_PLUGINS/jquery-3.4.1.slim.min.js"></script>
+	<c:import url="import.jsp"/>
 	<script>
 	$(document).ready(function(){
 		$("#mytable #checkall").click(function () {
@@ -28,11 +30,7 @@
 	</script>
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-light navbar-laravel">
-			<div class="container">
-				<a class="navbar-brand" href="#">ROUPEX</a>
-			</div>
-		</nav>
+		<c:import url="navbar.jsp"/>
 		
 		<div class="container">
 	<div class="row">
@@ -142,7 +140,7 @@
 				</div>
 				
 				
-				<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+				<!-- <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
 				      <div class="modal-dialog">
 				    <div class="modal-content">
 				          <div class="modal-header">
@@ -167,9 +165,9 @@
 				        <button type="button" class="btn btn-warning btn-lg" style="width: 100%;"><span class="glyphicon glyphicon-ok-sign"></span> Update</button>
 				      </div>
 				        </div>
-				    <!-- /.modal-content --> 
+				    /.modal-content 
 				  </div>
-				      <!-- /.modal-dialog --> 
+				      /.modal-dialog 
 				    </div>
 				    
 				    
@@ -191,10 +189,10 @@
 				        <button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> No</button>
 				      </div>
 				        </div>
-				    <!-- /.modal-content --> 
+				    /.modal-content 
 				  </div>
-				      <!-- /.modal-dialog --> 
-				    </div>
+				      /.modal-dialog 
+				    </div> -->
 		
 	</body>
 </html>

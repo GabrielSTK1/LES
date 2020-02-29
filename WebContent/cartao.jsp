@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -8,6 +9,7 @@
 	<title>Cartão</title>
 	<link rel="stylesheet" href="_PLUGINS/bootstrap.min.css">
 	<script src="_PLUGINS/jquery-3.4.1.slim.min.js"></script>
+	<c:import url="import.jsp"/>
 	<script>
 	$(document).ready(function(){
 		$("#txtNumero").focusout(function(){
@@ -75,11 +77,7 @@
 		</style>
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-light navbar-laravel">
-			<div class="container">
-				<a class="navbar-brand" href="#">ROUPEX</a>
-			</div>
-		</nav>
+		<c:import url="navbar.jsp"/>
 		
 		<main class="my-form">
 			<div class="container">
