@@ -137,6 +137,13 @@
 									</div>
 									
 									<div class="form-group row">
+										<label for="txtCep" class="col-md-4 col-form-label text-md-right">CEP</label>
+										<div class="col-md-6">
+											<input type="number" id="txtCep" name="txtCep" class="form-control">
+										</div>
+									</div>
+									
+									<div class="form-group row">
 										<label for="txtCidade" class="col-md-4 col-form-label text-md-right">Cidade</label>
 										<div class="col-md-6">
 											<input type="text" id="txtCidade" name="txtCidade" class="form-control">
@@ -165,7 +172,7 @@
 									</div>
 									
 									<div class="form-check row">
-									<label class="form-check-label">Definir colo Principal?</label>
+									<label class="form-check-label">Definir como Principal?</label>
 										<div class="form-check">
 											<input class="form-check-input" type="radio" name="txtPrincipal" id="principal" value="sim">
 											<label class="form-check-label" for="txtPrincipal">Sim</label>
