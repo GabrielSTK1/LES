@@ -46,6 +46,7 @@ CREATE TABLE `roupex`.`cartoes`(
     `crt_nomeImpresso` VARCHAR(50) NOT NULL,
     `crt_codigoSeguranca` VARCHAR(3) NOT NULL,
     `crt_bandeira` VARCHAR(15) NOT NULL,
+    `crt_dt_validade` DATETIME NOT NULL,
     `crt_principal` BOOLEAN NOT NULL,
     `crt_cliente` INT NOT NULL
 );
@@ -57,6 +58,6 @@ REFERENCES `roupex`.`usuarios`(`usu_id`);
 ALTER TABLE `roupex`.`enderecos` ADD CONSTRAINT `FK_CLI_ID` FOREIGN KEY (`end_cliente`)
 REFERENCES `roupex`.`clientes`(`cli_id`);
 
-ALTER TABLE `roupex`.`cartoes` ADD CONSTRAINT `FK_CLI_ID` FOREIGN KEY (`crt_cliente`)
+ALTER TABLE `roupex`.`cartoes` ADD CONSTRAINT `FK_CLI_CRT_ID` FOREIGN KEY (`crt_cliente`)
 REFERENCES `roupex`.`clientes`(`cli_id`);
 

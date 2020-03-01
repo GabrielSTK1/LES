@@ -6,6 +6,7 @@ public class Cartao extends EntidadeDominio{
 	private String nomeImpresso;
 	private String codigoSeguranca;
 	private Bandeira bandeira;
+	private String dataValidade;
 	
 	public String getNumeroCartao() {
 		return numeroCartao;
@@ -30,6 +31,12 @@ public class Cartao extends EntidadeDominio{
 	}
 	public void setBandeira(Bandeira bandeira) {
 		this.bandeira = bandeira;
+	}
+	public String getDataValidade() {
+		return dataValidade;
+	}
+	public void setDataValidade(String dataValidade) {
+		this.dataValidade = dataValidade;
 	}
 	
 	
