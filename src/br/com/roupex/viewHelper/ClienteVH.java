@@ -31,6 +31,25 @@ public class ClienteVH implements IViewHelper{
 		
 		if(resultado.getMensagem() != null && !resultado.getMensagem().trim().equalsIgnoreCase("")) {
 			request.getSession().setAttribute("ResultadoCliente", resultado);
+			d = request.getRequestDispatcher("cliente.jsp");
+			d.forward(request, response);
+		}else if(operacao.equalsIgnoreCase("salvar")) {
+			resultado.setMensagem("Salvo com Sucesso");
+			request.setAttribute("ResultadoClienteSalvo", resultado);
+			response.sendRedirect("index.jsp");
+		}else if(operacao.equalsIgnoreCase("consultar")) {
+			resultado.setMensagem("Consulta realizada com Sucesso");
+			request.setAttribute("ResultadoClienteConsulta", resultado);
+			d = request.getRequestDispatcher("cliente.jsp");
+			d.forward(request, response);
+		}else if(operacao.equalsIgnoreCase("alterar")) {
+			resultado.setMensagem("Alteração realizada com Sucesso");
+			request.setAttribute("ResultadoClienteAlterar", resultado);
+			d = request.getRequestDispatcher("cliente.jsp");
+			d.forward(request, response);
+		}else if(operacao.equalsIgnoreCase("excluir")) {
+			resultado.setMensagem("Excluido com Sucesso");
+			request.setAttribute("ResultadoClienteExcluir", resultado);
 			d = request.getRequestDispatcher("index.jsp");
 			d.forward(request, response);
 		}
